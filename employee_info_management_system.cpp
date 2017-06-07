@@ -53,7 +53,7 @@ private:
 };
 
 
-void Staff::registration(class Staff* head)
+void Staff::registration(Staff* head)
 {
     while(head->next != NULL)
     {
@@ -158,7 +158,7 @@ void Staff::query_name(Staff* t)
         cout << "查无此人！" << endl;
     }
 }
-void Staff::query_depart(class Staff* t)
+void Staff::query_depart(Staff* t)
 {
     string n;
     cout << "请输入你想查询职工部门:" << endl;
@@ -203,7 +203,7 @@ void Staff::query_depart(class Staff* t)
         cout << "查无此人！" << endl;
     }
 }
-void Staff::delete_num(class Staff* t)
+void Staff::delete_num(Staff* t)
 {
     string n;
     cout << "请输入你想删除职工号:" << endl;
@@ -295,7 +295,7 @@ void Staff::update(class Staff* head)
         cout << "请重新输入正确的指令！" << endl;
     }
 }
-void Staff::update_num(class Staff* head)
+void Staff::update_num(Staff* head)
 {
     cout << "输入要修改对象的工号："<< endl;
     int count = 0;
@@ -320,7 +320,7 @@ void Staff::update_num(class Staff* head)
         cout << "查无此人" << endl;
     }
 }
-void Staff::update_name(class Staff* head)
+void Staff::update_name(Staff* head)
 {
     cout << "输入要修改对象的工号："<< endl;
     int count = 0;
@@ -345,7 +345,7 @@ void Staff::update_name(class Staff* head)
         cout << "查无此人" << endl;
     }
 }
-void Staff::update_age(class Staff* head)
+void Staff::update_age(Staff* head)
 {
     cout << "输入要修改对象的工号："<< endl;
     int count = 0;
@@ -370,7 +370,7 @@ void Staff::update_age(class Staff* head)
         cout << "查无此人" << endl;
     }
 }
-void Staff::update_sex(class Staff* head)
+void Staff::update_sex(Staff* head)
 {
     cout << "输入要修改对象的工号："<< endl;
     int count = 0;
@@ -395,7 +395,7 @@ void Staff::update_sex(class Staff* head)
         cout << "查无此人" << endl;
     }
 }
-void Staff::update_zip(class Staff* head)
+void Staff::update_zip(Staff* head)
 {
     cout << "输入要修改对象的工号："<< endl;
     int count = 0;
@@ -420,7 +420,7 @@ void Staff::update_zip(class Staff* head)
         cout << "查无此人" << endl;
     }
 }
-void Staff::update_depart(class Staff* head)
+void Staff::update_depart(Staff* head)
 {
     cout << "输入要修改对象的工号："<< endl;
     int count = 0;
@@ -602,7 +602,7 @@ void Staff::sort_down(Staff* head)
         head = head->next;
     }
 }
-int Staff::read(class Staff* head)
+int Staff::read(Staff* head)
 {
     ifstream infile("职工系统.txt");
     while(!infile.eof())
