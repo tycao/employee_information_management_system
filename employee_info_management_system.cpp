@@ -689,9 +689,11 @@ int main()
             break;
         case 6:
             head->sort_up(head);
+            head->show_all(head);
             break;
         case 7:
             head->sort_down(head);
+            head->show_all(head);
             break;
         case 8:
             head->update(head);
